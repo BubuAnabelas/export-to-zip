@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "__MSG_extensionName__",
+	"description": "__MSG_extensionDescription__",
+	"version": "1.0.0",
+	"author": "Joaquín Serna",
+	"default_locale": "en",
+	"applications": {
+		"gecko": {
+			"id": "export-to-zip@serna.ar",
+			"strict_min_version": "78.4.0"
+		}
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": ["messagesRead", "accountsFolders", "accountsRead", "downloads", "menus"]
+}

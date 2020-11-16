@@ -1,0 +1,46 @@
+{
+  "name": "export-to-zip",
+  "version": "1.0.0",
+  "description": "Export your mails and folders to a zip file!",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && parcel build src/background.js --no-source-maps",
+    "zip": "rm export-to-zip.zip && cd dist && bestzip ../export-to-zip.zip *"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BubuAnabelas/export-to-zip.git"
+  },
+  "author": "Joaquín Serna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BubuAnabelas/export-to-zip/issues"
+  },
+  "homepage": "https://github.com/BubuAnabelas/export-to-zip#readme",
+  "dependencies": {
+    "jszip": "^3.5.0"
+  },
+  "engines": {
+    "thunderbird": ">=78.4.0"
+  },
+  "browserslist": [
+    "firefox esr"
+  ],
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "manifest.json"
+      },
+      {
+        "staticPath": "_locales",
+        "staticOutDir": "_locales"
+      }
+    ]
+  },
+  "devDependencies": {
+    "bestzip": "^2.1.7",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "rimraf": "^3.0.2"
+  }
+}

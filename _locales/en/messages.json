@@ -1,0 +1,16 @@
+{
+	"extensionName": {
+		"message": "Export to ZIP",
+		"description": "Name of the extension"
+	},
+
+	"extensionDescription": {
+		"message": "Export your mails and folders to a zip file!",
+		"description": "Description of the extension"
+	},
+
+	"menuTitle": {
+		"message": "Export to ZIP",
+		"description": "Menu item button"
+	}
+}

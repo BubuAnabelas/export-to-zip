@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && parcel build src/background.js --no-source-maps",
-    "zip": "rm export-to-zip.zip && cd dist && bestzip ../export-to-zip.zip *"
+    "zip": "rimraf export-to-zip.zip && cd dist && bestzip ../export-to-zip.zip *"
   },
   "repository": {
     "type": "git",
